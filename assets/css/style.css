@@ -1,8 +1,7 @@
 /**
-* Template Name: Delicious - v4.7.1
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* colors
+pale yellow 
+pink de4f45
 */
 
 /*--------------------------------------------------------------
@@ -25,6 +24,11 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Satisfy", sans-serif;
+}
+
+.boldhighlight {
+  font-weight: bolder !important; 
+  color: #de4f45 !important;
 }
 
 /*--------------------------------------------------------------
@@ -116,14 +120,14 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 55px;
 }
 
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
 .book-a-table-btn {
-  background: #433f39;
+  background: #de4f45;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -135,7 +139,9 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 .book-a-table-btn:hover {
-  background: #ffa012;
+  -webkit-animation: book-a-table-btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: book-a-table-btn 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background: #de4f45; /*pink*/
   color: #fff;
 }
 @media (max-width: 992px) {
@@ -182,7 +188,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #433f39;
+  color: #de4f45;
+  font-weight: bolder;
 }
 .navbar .dropdown ul {
   display: block;
@@ -441,10 +448,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #fff;
-  border: 2px solid #433f39;
+  border: 2px solid #de4f45;
 }
 #hero .btn-menu:hover, #hero .btn-book:hover {
-  background: #433f39;
+  background: #de4f45;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -830,10 +837,10 @@ section {
   font-size: 15px;
 }
 .specials .nav-link:hover {
-  color: #433f39;
+  color: #de4f45;
 }
 .specials .nav-link.active {
-  color: #433f39;
+  color: #de4f45;
   border-color: #433f39;
 }
 .specials .tab-pane.active {
@@ -1233,7 +1240,7 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #433f39;
+  color: #de4f45;
   float: left;
   width: 44px;
   height: 44px;
@@ -1259,7 +1266,7 @@ section {
   color: #7a7368;
 }
 .contact .info:hover i {
-  background: #433f39;
+  background: #de4f45;
   color: #fff;
 }
 .contact .php-email-form {
@@ -1348,11 +1355,11 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #35322d;
+  background: #fff;
   color: #fff;
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 5px 0;
 }
 #footer h3 {
   font-size: 36px;
@@ -1393,4 +1400,35 @@ section {
 }
 #footer .credits {
   font-size: 13px;
+}
+
+
+/* added css*/
+ @-webkit-keyframes book-a-table-btn {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+            transform: translateZ(0) translateX(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(20px) translateX(-5px) translateY(-5px);
+            transform: translateZ(20px) translateX(-5px) translateY(-5px);
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+            box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes book-a-table-btn {
+  0% {
+    -webkit-transform: translateZ(0) translateX(0) translateY(0);
+            transform: translateZ(0) translateX(0) translateY(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(20px) translateX(-5px) translateY(-5px);
+            transform: translateZ(20px) translateX(-5px) translateY(-5px);
+    -webkit-box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+            box-shadow: 12px 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
 }
