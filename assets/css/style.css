@@ -353,7 +353,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(12, 11, 10, 0.5);
   position: absolute;
   top: 0;
   right: 0;
